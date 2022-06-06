@@ -5,7 +5,8 @@ pipeline {
         stage ("build dockerfile") {
             steps {
                 sh'''
-                docker build - < Dockerfile
+                docker build .
+                docker images
                 '''
             }
         }
