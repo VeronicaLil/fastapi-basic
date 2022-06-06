@@ -2,10 +2,10 @@ pipeline {
     agent any
 
     stages {
-        stage ("cat dockerfile") {
+        stage ("build dockerfile") {
             steps {
                 sh'''
-                cat Dockerfile
+                docker build - < Dockerfile
                 '''
             }
         }
