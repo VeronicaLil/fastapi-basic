@@ -1,6 +1,6 @@
 FROM python:3.9
 
-WORKDIR /home
+WORKDIR /home2
 
 COPY ./requirements.txt /home/requirements.txt
 
@@ -14,4 +14,4 @@ COPY .env /home/.env
 
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
 
-#comment to trigger build
+#new comment
