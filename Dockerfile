@@ -1,6 +1,6 @@
 FROM python:3.9
 
-WORKDIR /home2
+WORKDIR /home
 
 COPY ./requirements.txt /home/requirements.txt
 
@@ -14,4 +14,3 @@ COPY .env /home/.env
 
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
 
-#new comment
